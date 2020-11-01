@@ -1,0 +1,72 @@
+[
+  {
+    "count": 3,
+    "description": "Visage is a first-person psychological horror game. Explore a mysterious ever-changing house in a slow-paced, atmospheric world that combines both uncannily comforting and horrifyingly realistic environments, and enjoy a genuinely terrifying experience.",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
+    "price": 16.49,
+    "title": "Visage"
+  },
+  {
+    "count": 7,
+    "description": "Pumpkin Jack is a Spooky Scary 3D platformer in which you embody Jack, the Mythical Pumpkin Lord! Dive into an Epic Adventure through otherworldly landscapes and help the Evil annihilate the Good!",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a0",
+    "price": 11.59,
+    "title": "Pumpkin Jack"
+  },
+  {
+    "count": 2,
+    "description": "The Witcher® 3: Wild Hunt",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
+    "price": 5.99,
+    "title": "As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world."
+  },
+  {
+    "count": 13,
+    "description": "Ghostrunner offers a unique single-player experience: fast-paced, violent combat, and an original setting that blends science fiction with post-apocalyptic themes. It tells the story of a world that has already ended and its inhabitants who fight to survive.",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a1",
+    "price": 15.99,
+    "title": "Ghostrunner"
+  },
+  {
+    "count": 12,
+    "description": "The Dark Pictures Anthology: Little Hope",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
+    "price": 19.99,
+    "title": "Trapped and isolated in the abandoned town of Little Hope, 4 college students and their teacher must escape the nightmarish apparitions that relentlessly pursue them through an impenetrable fog."
+  },
+  {
+    "count": 3,
+    "description": "Noita is a magical action roguelite set in a world where every pixel is physically simulated. Fight, explore, melt, burn, freeze and evaporate your way through the procedurally generated world using spells you've created yourself.",
+    "id": "7567ec4b-b10c-48c5-9345-fc73348a80a1",
+    "price": 10.49,
+    "title": "Noita"
+  },
+  {
+    "count": 1,
+    "description": "A bullet hell roguelike game. Players can utilize characters with different abilities, collect and assemble powerful items. Dance through an unending barrage of bullets to save both yourself and Touhou Gensokyo from the darkness that is engulfing everything.",
+    "id": "7567ec4b-b10c-48c5-9445-fc73c48a80a2",
+    "price": 4.49,
+    "title": "Touhou Endless Dream"
+  },
+  {
+    "count": 5,
+    "description": "Five new games: the hit threequel Quiplash 3, the collaborative chaos of The Devils and the Details, the fierce drawing game Champ’d Up, the speech game Talking Points and the guessing game Blather 'Round. Use phones or tablets as controllers and play with up to 8 players, and an audience of 10,000!",
+    "id": "7567ec4b-b10c-45c5-9345-fc73c48a80a1",
+    "price": 14.49,
+    "title": "The Jackbox Party Pack 7"
+  },
+  {
+    "count": 8,
+    "description": "Xuan-Yuan Sword VII is an ARPG rooted in Chinese history and mythology. Players take on the role of Taishi Zhao, a calm and reliable swordsman who was accidentally involved in a tragic fate. To protect his beloved family, he starts a journey in this chaotic realm to find the truth.",
+    "id": "7567ec4b-b10c-48c5-9445-fc73c48a80a2",
+    "price": 16.49,
+    "title": "Xuan-Yuan Sword VII"
+  },
+  {
+    "count": 9,
+    "description": "The Outer Worlds is an award-winning single-player RPG from Obsidian Entertainment and Private Division. As you explore a space colony, the character you decide to become will determine how this player-driven story unfolds. In the colony's corporate equation, you are the unplanned variable.",
+    "id": "7567ec4b-b10c-45c5-9345-fc73c48a80a1",
+    "price": 30.47,
+    "title": "The Outer Worlds"
+  }
+]
