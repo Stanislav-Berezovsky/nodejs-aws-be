@@ -13,9 +13,15 @@ const serverlessConfiguration: Serverless = {
       webpackConfig: "./webpack.config.js",
       includeModules: true,
     },
+    "serverless-offline": {
+      httpPort: 4000,
+    },
   },
-  // Add the serverless-webpack plugin
-  plugins: ["serverless-webpack", "serverless-dotenv-plugin"],
+  plugins: [
+    "serverless-offline",
+    "serverless-dotenv-plugin",
+    "serverless-webpack",
+  ],
   provider: {
     name: "aws",
     runtime: "nodejs12.x",
@@ -30,7 +36,7 @@ const serverlessConfiguration: Serverless = {
       PG_PORT: "${env:PG_PORT}",
       PG_DATABASE: "${env:PG_DATABASE}",
       PG_USERNAME: "${env:PG_USERNAME}",
-      PG_PASSWORD: "${env:PG_PASSWORD}"
+      PG_PASSWORD: "${env:PG_PASSWORD}",
     },
   },
   functions: {
@@ -61,6 +67,18 @@ const serverlessConfiguration: Serverless = {
                 },
               },
             },
+          },
+        },
+      ],
+    },
+    createProduct: {
+      handler: "handler.createProduct",
+      events: [
+        {
+          http: {
+            method: "post",
+            path: "products",
+            cors: true,
           },
         },
       ],
