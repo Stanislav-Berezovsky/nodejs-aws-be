@@ -1,30 +1,39 @@
 import { APIGatewayProxyHandler } from "aws-lambda";
 import * as AWS from "aws-sdk";
-
-const BUCKET = process.env.BUCKET;
+import { BUCKET, defaultCors } from "../constants";
 
 export const importProductsFile: APIGatewayProxyHandler = async (event) => {
-  const fileName = event.queryStringParameters.name;
-  const filePath = `uploaded/${fileName}`;
-  const s3 = new AWS.S3({ region: "eu-west-1" });
-  const params = {
-    Bucket: BUCKET,
-    Key: filePath,
-    Expires: 60,
-    ContentType: "text/csv",
-  };
+  try {
+    const fileName = event.queryStringParameters.name;
 
-  return new Promise((res, rej) => {
-    s3.getSignedUrl("putObject", params, (err, url) => {
-      if (err) {
-        return rej(err);
-      }
+    if (!fileName) {
+      return {
+        statusCode: 400,
+        body: "Invalid file name",
+      };
+    }
 
-      res({
-        statusCode: 200,
-        headers: { "Access-Control-Allow-Origin": "*" },
-        body: url,
-      });
-    });
-  });
+    const filePath = `uploaded/${fileName}`;
+    const s3 = new AWS.S3({ region: "eu-west-1" });
+    const params = {
+      Bucket: BUCKET,
+      Key: filePath,
+      Expires: 60,
+      ContentType: "text/csv",
+    };
+
+    const url = await s3.getSignedUrlPromise("putObject", params);
+
+    return {
+      statusCode: 202,
+      headers: defaultCors,
+      body: url,
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      headers: defaultCors,
+      body: "Internal server error.",
+    };
+  }
 };
